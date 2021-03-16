@@ -197,6 +197,7 @@ img {
     display: block;
   }
   .navbar .container .navbar-nav .nav-item {
+    margin-left: 0;
     margin-bottom: .5rem;
   }
   .navbar .container .navbar-nav.collapse {
@@ -1017,8 +1018,14 @@ section.footer .container .footer-desc.address .social-icons .social-icon.active
   section.cashback .container .images .credit-cards .credit-card {
     width: 227px;
   }
+  section.company .ellipse {
+    display: none;
+  }
   section.company .container {
     text-align: center;
+  }
+  section.company .container .images {
+    margin-right: 0;
   }
   section.company .container .images img {
     width: 213px;
@@ -1068,6 +1075,7 @@ section.footer .container .footer-desc.address .social-icons .social-icon.active
   }
   section.download .container .bg-gradient .container .desc .buttons .btn {
     margin-bottom: .5rem;
+    margin-right: 0 !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

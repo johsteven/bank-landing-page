@@ -548,9 +548,13 @@ section.footer {
         }
     }
     section.company {
+        .ellipse {
+            display: none;
+        }
         .container {
             text-align: center;
             .images {
+                margin-right: 0;
                 img {
                     width: 213px;
                     height: 330px
@@ -598,6 +602,7 @@ section.footer {
                             flex-direction: column;
                             .btn {
                                 margin-bottom: .5rem;
+                                margin-right: 0 !important;
                                 justify-content: center;
                                 padding-top: 1rem !important;
                                 padding-bottom: 1rem !important;
