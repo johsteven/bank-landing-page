@@ -1,0 +1,21 @@
+{
+    "name": "bank-landing-page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "prod": "npm run minify && npm run purgecss",
+        "purgecss": "purgecss --css assets/vendor/bootstrap/bootstrap.min.css --content index.html --output assets/vendor/bootstrap/bootstrap.min.css",
+        "minify": "npm run bsmin && npm run cssmin && npm run jsmin",
+        "bsmin": "minify assets/vendor/bootstrap/bootstrap.css > assets/vendor/bootstrap/bootstrap.min.css",
+        "cssmin": "minify assets/css/app.css > assets/css/app.min.css",
+        "jsmin": "minify assets/js/app.js > assets/js/app.min.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "minify": "^7.0.1",
+        "purgecss": "^4.0.2"
+    }
+}

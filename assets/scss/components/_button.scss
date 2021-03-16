@@ -1,0 +1,30 @@
+.btn {
+    border-radius: 8px;
+    border: none;
+    font-size: 13px;
+    color: #fff !important;
+    font-weight: 600;
+    padding: .775rem 2.375rem !important;
+    &.btn-primary {
+        background-color: $primary-color;
+        &:active,
+        &:focus {
+            border-color: $primary-color !important;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            background-color: lighten($color: $primary-color, $amount: 10) !important;
+        }
+    }
+    &.btn-secondary {
+        background-color: $secondary-color;
+        &:active,
+        &:focus {
+            border-color: $secondary-color !important;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            background-color: lighten($color: $secondary-color, $amount: 10) !important;
+        }
+    }
+}
